@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyClimateApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="tuZ-Uc-Tbh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58880019189999999" green="0.74982458350000003" blue="0.87452918290000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYd-ER-UxF">
+                                <rect key="frame" x="263" y="122" width="84" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ruO-sl-yhg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="underPageBackgroundColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                    <color key="baseBackgroundColor" red="0.58880019189999999" green="0.74982458350000003" blue="0.87452918290000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="irA-ai-i1D"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPF-zm-B9N">
+                                <rect key="frame" x="75.666666666666657" y="69" width="271.33333333333337" height="40"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="x1q-hM-xnx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="q2T-76-B0n">
+                                <rect key="frame" x="15" y="149" width="113" height="105"/>
+                                <color key="tintColor" red="0.20470085739999999" green="0.47178941969999999" blue="0.96475678679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="Cfr-BP-hNw"/>
+                                    <constraint firstAttribute="height" constant="105" id="raQ-nK-RTE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="8uO-Qe-fGn">
+                                <rect key="frame" x="16" y="270" width="361" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="5RU-R1-fk0"/>
+                                    <constraint firstAttribute="height" constant="40" id="hBV-tD-AbW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEm-iw-8bm">
+                                <rect key="frame" x="9.9999999999999964" y="69" width="49.666666666666657" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3GI-Me-iKi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="location.north.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="currentLocationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xdv-dC-ATx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="aEp-dR-mhf">
+                                <rect key="frame" x="16" y="348" width="361" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0fm-bp-O97"/>
+                                    <constraint firstAttribute="width" constant="361" id="7Nw-Zh-a5l"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="FXb-wF-2VC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="wBj-Az-WSS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information about weather" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCq-YT-L5h">
+                                <rect key="frame" x="16" y="461" width="361" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="KuQ-nQ-MC5"/>
+                                    <constraint firstAttribute="width" constant="361" id="VIx-rp-thH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.58880019189999999" green="0.74982458350000003" blue="0.87452918290000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="shadowColor" red="1" green="0.58564840559999998" blue="0.30809184150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wYd-ER-UxF" secondAttribute="trailing" constant="46" id="1Qb-Tf-t2Z"/>
+                            <constraint firstItem="8uO-Qe-fGn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1ly-pu-DgE"/>
+                            <constraint firstItem="wYd-ER-UxF" firstAttribute="leading" secondItem="q2T-76-B0n" secondAttribute="trailing" constant="135" id="2EY-5k-7a6"/>
+                            <constraint firstItem="UEm-iw-8bm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="53d-u3-CVZ"/>
+                            <constraint firstItem="q2T-76-B0n" firstAttribute="top" secondItem="bPF-zm-B9N" secondAttribute="bottom" constant="40" id="681-Ni-7lH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8uO-Qe-fGn" secondAttribute="trailing" constant="16" id="9yd-5G-SfJ"/>
+                            <constraint firstItem="TCq-YT-L5h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ClQ-CF-lD4"/>
+                            <constraint firstItem="wYd-ER-UxF" firstAttribute="leading" secondItem="q2T-76-B0n" secondAttribute="trailing" constant="135" id="Hep-EA-hkG"/>
+                            <constraint firstItem="bPF-zm-B9N" firstAttribute="leading" secondItem="UEm-iw-8bm" secondAttribute="trailing" constant="16" id="JWD-hL-WBl"/>
+                            <constraint firstItem="q2T-76-B0n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="LPm-Sf-Xh9"/>
+                            <constraint firstItem="TCq-YT-L5h" firstAttribute="top" secondItem="aEp-dR-mhf" secondAttribute="bottom" constant="73" id="O3L-QR-mQP"/>
+                            <constraint firstItem="wYd-ER-UxF" firstAttribute="leading" secondItem="q2T-76-B0n" secondAttribute="trailing" constant="135" id="OgD-Kd-MaP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bPF-zm-B9N" secondAttribute="trailing" constant="46" id="bb0-e0-Zva"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TCq-YT-L5h" secondAttribute="trailing" constant="16" id="c0M-fj-1js"/>
+                            <constraint firstItem="aEp-dR-mhf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dSm-zJ-9Wx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aEp-dR-mhf" secondAttribute="trailing" constant="16" id="f3h-AQ-sCA"/>
+                            <constraint firstItem="8uO-Qe-fGn" firstAttribute="top" secondItem="q2T-76-B0n" secondAttribute="bottom" constant="16" id="hDj-pv-rDp"/>
+                            <constraint firstItem="bPF-zm-B9N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pcJ-2H-Pho"/>
+                            <constraint firstItem="aEp-dR-mhf" firstAttribute="top" secondItem="8uO-Qe-fGn" secondAttribute="bottom" constant="38" id="r09-2q-p2r"/>
+                            <constraint firstItem="UEm-iw-8bm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="wVg-Kq-6Vn"/>
+                            <constraint firstItem="wYd-ER-UxF" firstAttribute="top" secondItem="bPF-zm-B9N" secondAttribute="bottom" constant="13" id="wv1-xg-SBn"/>
+                            <constraint firstItem="bPF-zm-B9N" firstAttribute="leading" secondItem="UEm-iw-8bm" secondAttribute="trailing" constant="16" id="yj1-SJ-Wxd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="aEp-dR-mhf" id="lcj-Af-Reb"/>
+                        <outlet property="climateLogo" destination="q2T-76-B0n" id="Kxr-qY-Chf"/>
+                        <outlet property="infoLabel" destination="TCq-YT-L5h" id="6Xd-Q2-WeC"/>
+                        <outlet property="searchTextField" destination="bPF-zm-B9N" id="Dnc-gr-58G"/>
+                        <outlet property="tempLabel" destination="8uO-Qe-fGn" id="pau-oC-OSh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23.664122137404579" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="595" height="842"/>
+        <image name="location.north.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="sun.max" catalog="system" width="128" height="125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="underPageBackgroundColor">
+            <color red="0.70980392156862748" green="0.71764705882352942" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
